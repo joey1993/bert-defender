@@ -2,10 +2,10 @@
 
 This repo contains code for the following paper.
 
-Learning to Discriminate Perturbations for Blocking Adversarial Attacks in Text Classification
+Learning to Discriminate Perturbations for Blocking Adversarial Attacks in Text Classification, <br> 
 Yichao Zhou, Jyun-Yu Jiang, Kai-Wei Chang and Wei Wang. EMNLP 2019.
 
-In this paper, we propose a novel framework, learning to discriminate perturbations (DISP), to identify and adjust malicious perturbations, thereby blocking ad- versarial attacks for text classification models.
+In this paper, we propose a novel framework, learning to discriminate perturbations (DISP), to identify and adjust malicious perturbations, thereby blocking adversarial attacks for text classification models.
 
 ## Requirements
 ```
