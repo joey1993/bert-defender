@@ -14,7 +14,7 @@ import io
 import torch
 import hnswlib
 
-unk = "the"
+
 logging.basicConfig(format = '%(asctime)s - %(levelname)s - %(name)s -   %(message)s',
                     datefmt = '%m/%d/%Y %H:%M:%S',
                     level = logging.INFO)
@@ -765,7 +765,7 @@ def attack_word(tok, p, emb_dict, vocab_list): # TODO: attack tokens from the wo
     if tok in emb_dict:
         tok_emb = emb_dict[tok]
     else:
-        tok_emb = emb_dict[unk]
+        pass
 
     most_similar_word_id = query_most_similar_word_id_from_embedding(p, tok_emb, 20)
     index = random.choice(range(len(most_similar_word_id)))
@@ -833,7 +833,7 @@ def look_up_embeddings(ngram_labels, embeddings, i2w):
             if word in embeddings:
                 embs.append(list(embeddings[word]))
             else:
-                embs.append(list(embeddings[unk])) # only "'n",'`','``' ... not in the dict
+                pass
 
     return embs
 
